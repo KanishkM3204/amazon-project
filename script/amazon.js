@@ -74,7 +74,6 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
         addToCart(productId);
         updateCartQuantity();
         
-
         const addedMessage = document.querySelector(`.js-added-to-cart-${productId}`);
 
         addedMessage.classList.add('added-to-cart-visible');
@@ -83,3 +82,5 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
         }, 2000);
     });
 });
+
+updateCartQuantity();
